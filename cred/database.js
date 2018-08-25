@@ -1,5 +1,5 @@
 module.exports = {
   /* Add Your Database URL */
-  database: 'Your Mongo Details',
+  database: 'Your DataBase',
   secret: 'thisisasecret'
 }

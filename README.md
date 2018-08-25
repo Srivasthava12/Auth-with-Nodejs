@@ -1,6 +1,6 @@
 # Instructions
 ## If you would like to download the code and try it for yourself:
- - *Clone the repo:* `git clone https://github.com/Srivasthava12/Auth-Node.git`
+ - *Clone the repo:* `git clone https://github.com/Srivasthava12/Auth-with-Nodejs.git`
  - *Go into the project folder:* `cd Auth-Node`
  - *Install packages:* `npm install`
  - *Change out the database configuration in config/database.js*

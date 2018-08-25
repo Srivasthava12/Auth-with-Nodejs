@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const config = require('./emailcred');
+const emailcred = require('../cred/emailcred');
 
 module.exports.nodeMailer = function (email, subject, msg) {
   let transporter = nodemailer.createTransport({
@@ -7,8 +7,8 @@ module.exports.nodeMailer = function (email, subject, msg) {
     secure: false,
     port: 25,
     auth: {
-      user: config.email,
-      pass: config.password
+      user: emailcred.email,
+      pass: emailcred.password
     },
     tls: {
       rejectUnauthorized: false

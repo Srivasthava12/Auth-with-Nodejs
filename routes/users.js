@@ -3,7 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
-const config = require('../config/database');
+const cred = require('../cred/database');
 const genRandom = require('../config/genrandom');
 const formateForMail = require('../config/formatesformail');
 const nodeMailer = require('../config/nodemailer')
@@ -66,7 +66,7 @@ router.post('/authenticate', (req, res) => {
       if (isMatch) {
         const token = jwt.sign({
           data: user
-        }, config.secret, {
+        }, cred.secret, {
           expiresIn: 604800 //1 week
         });
 

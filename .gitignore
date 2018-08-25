@@ -6,10 +6,6 @@
 /test-results
 .nyc_output
 
-# CredFiles
-/config/database.js
-/config/emailcred.js
-
 # production
 /build
 
@@ -26,7 +22,7 @@ pids
 *.seed
 *.pid.lock
 
-# misc
+# . files
 .npm
 .DS_Store
 npm-debug.log*
