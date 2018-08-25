@@ -9,8 +9,7 @@
 # production
 /build
 
-# cred Folder
-/cred/
+
 
 # Logs
 logs
