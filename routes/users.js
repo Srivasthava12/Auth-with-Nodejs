@@ -101,7 +101,7 @@ router.get('/profile', passport.authenticate('jwt', {
 });
 
 //ResetPassword
-router.post('/restpassword', passport.authenticate('jwt', {
+router.post('/changepassword', passport.authenticate('jwt', {
   session: false
 }), (req, res) => {
   const oldPassword = req.body.oldPassword;
