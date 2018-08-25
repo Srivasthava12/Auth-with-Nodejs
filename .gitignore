@@ -6,6 +6,10 @@
 /test-results
 .nyc_output
 
+# CredFiles
+/config/database.js
+/config/emailcred.js
+
 # production
 /build
 
