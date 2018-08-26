@@ -16,7 +16,7 @@ module.exports.nodeMailer = function (email, subject, msg) {
   });
 
   let mailOptions = {
-    from: '"ProjectZeros" <TestPZs99@gmail.com',
+    from: '"ProjectZeros"',
     to: email,
     subject: subject, // Subject line
     text: 'Hello', // plain text body
