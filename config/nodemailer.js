@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 const emailcred = require('../cred/emailcred');
 
-module.exports.nodeMailer = function (email, subject, msg) {
+module.exports.nodeMailer = function (toEmail, subject, msg) {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     secure: false,
@@ -17,7 +17,7 @@ module.exports.nodeMailer = function (email, subject, msg) {
 
   let mailOptions = {
     from: '"ProjectZeros"',
-    to: email,
+    to: toEmail,
     subject: subject, // Subject line
     text: 'Hello', // plain text body
     html: msg // html body
