@@ -6,7 +6,7 @@
  - *Change out the database configuration in cred/database.js*
  - *Change out the email credentials in cred/emailcred.js*
  - *Launch:* `node app.js`
- - Visit in your browser at: `http://localhost:8080`
+ - Visit in your browser at: `http://localhost:3000`
 
 ## The endpoints available are:
 
