@@ -72,6 +72,7 @@ router.post('/authenticate', (req, res) => {
 
         res.json({
           success: true,
+          msg: 'Successfully Login ',
           token: 'JWT ' + token,
           user: {
             name: user.name,
