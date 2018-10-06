@@ -186,7 +186,7 @@ router.post('/forgotpassword', (req, res) => {
 //ResetPassword
 router.post('/resetpassword', (req, res) => {
 	const password = req.body.newPassword;
-	const email = jwtDecode(req.body.token).exp;
+	const email = jwtDecode(req.body.token).data.email;
 	User.getUserByEmail(email, (err, user) => {
 		if (err) {
 			throw err;
