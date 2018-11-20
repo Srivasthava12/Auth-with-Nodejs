@@ -1,5 +1,5 @@
 module.exports = {
   /* Add Your Database URL */
-  database: 'Your DataBase',
-  secret: 'thisisasecret'
+  database: process.env.database,
+  secret: process.env.secret
 }

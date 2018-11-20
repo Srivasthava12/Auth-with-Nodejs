@@ -1,4 +1,4 @@
 module.exports = {
-  email: 'Your Email',
-  password: 'Your Password'
+  email: process.env.email,
+  password: process.env.password
 }
