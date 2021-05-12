@@ -15,7 +15,7 @@
     "jsonwebtoken": "*",
     "jwt-decode": "^2.2.0",
     "mongoose": "*",
-    "nodemailer": "^4.6.7",
+    "nodemailer": "^6.4.16",
     "passport": "*",
     "passport-jwt": "*"
   },
